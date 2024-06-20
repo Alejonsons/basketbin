@@ -1,0 +1,84 @@
+
+
+.teamList{
+    position: absolute;
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 999;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.closeTeamList{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.myTeamWrapper{
+    height: calc(100vh - 74px);
+    background-image: url('../../../public/myteam_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.lineUpTeam{
+    position: absolute;
+    margin-left: 2rem;
+    z-index: 99;
+    margin-top: 2rem;
+}
+
+.lineUpWrapper{
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 294px);
+}
+
+.selectedCard{
+    position: absolute;
+}
+
+.playersFooter{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    opacity: 1;
+}
+
+.positionZone{
+    height: 220px;
+    width: 180px;
+    border: 2px solid #ff8800;
+    border-style: dashed;
+    border-radius: 8px;
+}
+
+@media (max-width: 840px){
+    .myTeamWrapper{
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .lineUpTeam{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .teamList{
+        gap: 1rem;
+    }
+
+    .positionZone{
+        width: 100px;
+        height: 150px;
+    }
+}
+

@@ -1,0 +1,9 @@
+.scrollablePlayersList{
+    display: flex;
+    justify-content: start;
+    max-width: 100vw;
+    overflow: hidden;
+    gap: 0 15px;
+    padding: 0 1rem;
+    list-style: none;
+}

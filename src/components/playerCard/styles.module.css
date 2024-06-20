@@ -1,0 +1,72 @@
+
+
+.playerCard{
+    height: 220px;
+    width: 180px;
+    background-color: #bababa;     
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.2) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 8px;              
+    transition: all 0.3s;      
+    cursor: pointer;                  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}    
+
+.playerCard:hover{
+    transform: scale(0.95);
+}
+
+.teamImage{
+    width: 60px;
+    height: 40px;
+}
+
+.playerImageWrapper{
+    width: 60px;
+    height: 100px;
+    position: relative;
+}
+
+.playerImage{
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.cardInfos{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.playerName{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    font-size: 18px;
+    color: #121212;
+    text-align: center;
+}
+
+@media (max-width: 840px){
+    .playerCard{
+        width: 100px;
+        height: 150px;
+    }
+
+    .playerImageWrapper{
+        width: 50px;
+        height: 85px;
+    }
+
+    .teamImage{
+        width: 40px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .playerName{
+        font-size: 12px;
+    }
+}
